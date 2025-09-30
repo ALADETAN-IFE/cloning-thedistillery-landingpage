@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Abygaer, sans-serif;
+}
+
+@font-face {
+  font-family: "Abygaer";
+  src: url("./assets/fonts/abygaer/Abygaer Regular.otf") format("opentype"),
+    url("./assets/fonts/abygaer/Abygaer Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+svg {
+  fill: #063a47;
+}
+
+@media screen and (max-width: 1027px) {
+  .section {
+    width: 95% !important;
+  }
+}
+
+@media screen and (min-width: 1321px) {
+  .section {
+    width: 75% !important;
+  }
+}
+
+.button:hover {
+  animation: bounceScale 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background: transparent;
+  border: 1px solid gold;
+  color: gold;
+
+  & svg {
+    fill: gold;
+  }
+}
+
+@keyframes bounceScale {
+  0% {
+    transform: scale(0.8);
+  }
+  /* 60% {
+    transform: scale(1.1);
+  } */
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card_holder {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .card_holder {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card_holder {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}

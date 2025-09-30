@@ -1,0 +1,10 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* background: #0c4c5f; */
+  color: #444648;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
