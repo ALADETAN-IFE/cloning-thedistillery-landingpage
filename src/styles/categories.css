@@ -1,6 +1,7 @@
 .categories {
   padding: 15px;
   width: 100%;
+  padding-bottom: 40px;
   min-height: 60vh;
   color: #063a47;
   display: flex;
